@@ -5,51 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Instagram - App Favorites</title>
 
-  <!-- Import Google Fonts -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 
+  <!-- Font Awesome (pour icônes réseaux) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- CSS  -->
   <link rel="stylesheet" href="css/instagram.css" />
 </head>
 <body>
 
   <header>
-    <h1>Instagram</h1>
-    <nav>
-      <a href="index.html">Accueil</a> |
-      <a href="instagram.html">Instagram</a> |
-      <a href="clashroyale.html">Clash Royale</a> |
-      <a href="yacinetv.html">Yacine TV</a>
-    </nav>
+    <div class="container">
+      <h1>Instagram</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="instagram.html" class="active">Instagram</a></li>
+          <li><a href="clashroyale.html">Clash Royale</a></li>
+          <li><a href="yacinetv.html">Yacine TV</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <img src="img/logo-instagram.jpg" alt="Logo Instagram" class="app-logo" />
-    <h2>Partagez vos moments préférés avec le monde</h2>
-    <p>Instagram est une application de réseau social pour partager des photos, vidéos, stories et plus encore. Connectez-vous avec vos amis, célébrités et influenceurs.</p>
+    <div class="container">
 
-    <h3>Fonctionnalités clés :</h3>
-    <ul>
-      <li>Filtres photo et vidéo avancés</li>
-      <li>Stories éphémères</li>
-      <li>IGTV pour vidéos longues</li>
-      <li>Messagerie privée</li>
-    </ul>
+      <section class="intro">
+        <img src="img/logo-instagram.jpg" alt="Logo Instagram" class="app-logo" />
+        <h2>Partagez vos moments préférés avec le monde</h2>
+        <p class="app-desc">
+          Instagram est une application sociale pour publier vos photos, vidéos, stories, reels, et suivre vos amis, stars ou influenceurs préférés. Simple, rapide et créatif.
+        </p>
+      </section>
 
-    <h3>Téléchargement</h3>
-    <p>
-      <a href="https://apps.apple.com/app/instagram/id389801252" target="_blank" class="btn">App Store</a>
-      <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank" class="btn">Google Play</a>
-    </p>
+      <section class="features">
+        <h3>Fonctionnalités clés</h3>
+        <ul>
+          <li><i class="fas fa-image"></i> Filtres photo et vidéo stylés</li>
+          <li><i class="fas fa-clock"></i> Stories éphémères de 24h</li>
+          <li><i class="fas fa-video"></i> Reels & vidéos longues via IGTV</li>
+          <li><i class="fas fa-comments"></i> Messagerie privée instantanée</li>
+        </ul>
+      </section>
 
-    
+      <section class="screenshots">
+        <h3>Captures d’écran</h3>
+        <div class="screenshot-gallery">
+          <img src="img/insta-screen1.jpg" alt="Fil d’actualité Instagram" />
+          <img src="img/insta-screen2.jpg" alt="Profil utilisateur" />
+          <img src="img/insta-screen3.jpg" alt="Story en cours" />
+        </div>
+      </section>
+
+      <section class="video-demo">
+        <h3>Vidéo de démonstration</h3>
+        <video controls width="100%" class="demo-video">
+          <source src="img/insta-demo.mp4" type="video/mp4" />
+          Ton navigateur ne supporte pas les vidéos HTML5.
+        </video>
+      </section>
+
+      <section class="download">
+        <h3>Téléchargement</h3>
+        <p>
+          <a href="https://apps.apple.com/app/instagram/id389801252" target="_blank" class="btn">📱 App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.instagram.android" target="_blank" class="btn">🤖 Google Play</a>
+        </p>
+      </section>
+
+    </div>
   </main>
 
   <footer>
-    <a href="https://www.instagram.com/instagram/" target="_blank" title="Instagram officiel">
-      <i class="fab fa-instagram"></i>
-    </a>
-
-    <p>© 2025 Sadio Kanoute - Projet App Favorites</p>
+    <div class="container footer-content">
+      <a href="https://www.instagram.com/instagram/" target="_blank" title="Instagram officiel">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <p>© 2025 Sadio Kanoute - Projet App Favorites</p>
+    </div>
   </footer>
 
 </body>

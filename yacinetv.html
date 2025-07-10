@@ -5,51 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Yacine TV - App Favorites</title>
 
-  <!-- Import Google Fonts -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 
+  <!-- Font Awesome (icônes réseaux) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Feuille de style dédiée -->
   <link rel="stylesheet" href="css/yacinetv.css" />
 </head>
 <body>
 
   <header>
-    <h1>Yacine TV</h1>
-    <nav>
-      <a href="index.html">Accueil</a> |
-      <a href="instagram.html">Instagram</a> |
-      <a href="clashroyale.html">Clash Royale</a> |
-      <a href="yacinetv.html">Yacine TV</a>
-    </nav>
+    <div class="container">
+      <h1>Yacine TV</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="instagram.html">Instagram</a></li>
+          <li><a href="clashroyale.html">Clash Royale</a></li>
+          <li><a href="yacinetv.html" class="active">Yacine TV</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <img src="img/logo-yacinetv.jpg" alt="Logo Yacine TV" class="app-logo" />
-    <h2>Regardez vos chaînes TV préférées en direct sur mobile</h2>
-    <p>Yacine TV est une application qui permet de regarder en streaming direct les chaînes TV arabes et internationales, idéal pour ne rien manquer où que vous soyez.</p>
+    <div class="container">
 
-    <h3>Fonctionnalités clés :</h3>
-    <ul>
-      <li>Streaming en direct de nombreuses chaînes</li>
-      <li>Interface simple et rapide</li>
-      <li>Mises à jour fréquentes des liens</li>
-      <li>Compatible Android et iOS</li>
-    </ul>
+      <section class="intro">
+        <div class="logo-container">
+          <img src="img/logo-yacinetv.jpg" alt="Logo Yacine TV" class="app-logo" />
+        </div>
+        <h2>Regardez vos chaînes TV préférées en direct sur mobile</h2>
+        <p class="app-desc">
+          Yacine TV est une application qui permet de regarder en streaming direct les chaînes TV arabes et internationales, idéale pour ne rien manquer où que vous soyez.
+        </p>
+      </section>
 
-    <h3>Téléchargement</h3>
-    <p>
-      <a href="https://play.google.com/store/apps/details?id=com.yacine.tv" target="_blank" class="btn">Google Play</a>
-      <!-- Pas d'App Store officiel connu -->
-    </p>
+      <section class="features">
+        <h3>Fonctionnalités clés</h3>
+        <ul>
+          <li><i class="fas fa-tv"></i> Streaming en direct de nombreuses chaînes</li>
+          <li><i class="fas fa-bolt"></i> Interface simple et rapide</li>
+          <li><i class="fas fa-sync-alt"></i> Mises à jour fréquentes des liens</li>
+          <li><i class="fab fa-android"></i> Compatible Android et iOS</li>
+        </ul>
+      </section>
 
-    =
+      <section class="screenshots">
+        <h3>Captures d’écran</h3>
+        <div class="screenshot-gallery">
+          <img src="img/yacine-screen1.jpg" alt="Interface Yacine TV 1" />
+          <img src="img/yacine-screen2.jpg" alt="Interface Yacine TV 2" />
+          <img src="img/yacine-screen3.jpg" alt="Interface Yacine TV 3" />
+        </div>
+      </section>
+
+      <section class="video-demo">
+        <h3>Vidéo de démonstration</h3>
+        <video controls class="demo-video">
+          <source src="img/yacinetv-demo.mp4" type="video/mp4" />
+          Ton navigateur ne supporte pas les vidéos HTML5.
+        </video>
+      </section>
+
+      <section class="download">
+        <h3>Téléchargement</h3>
+        <p>
+          <a href="https://play.google.com/store/apps/details?id=com.yacine.tv" target="_blank" class="btn">📱 Google Play</a>
+          <!-- Pas d'App Store officiel connu -->
+        </p>
+      </section>
+
+    </div>
   </main>
 
   <footer>
-    <a href="https://yacinetv.site/" target="_blank" title="Yacine TV (non officiel)">
-      <i class="fas fa-tv"></i>
-    </a>
-
-    <p>© 2025 Sadio Kanoute - Projet App Favorites</p>
+    <div class="container footer-content">
+      <a href="https://yacinetv.site/" target="_blank" title="Yacine TV (non officiel)">
+        <i class="fas fa-tv"></i>
+      </a>
+      <p>© 2025 Sadio Kanoute - Projet App Favorites</p>
+    </div>
   </footer>
 
 </body>
