@@ -1,0 +1,150 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
+/* Reset simple */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff9f0;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+  color: #f28c00; /* orange Yacine TV */
+  outline: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue', cursive;
+  color: #f28c00;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.app-logo {
+  width: 150px;
+  display: block;
+  margin: 0 auto 20px auto;
+  height: auto;
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+main ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+main ul li {
+  margin-bottom: 8px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-right: 10px;
+  background-color: #f28c00;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #b26900;
+  outline: none;
+}
+
+.social-link {
+  color: #f28c00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social-link:hover,
+.social-link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

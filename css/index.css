@@ -1,0 +1,200 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+
+/* Reset simple */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header nav {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+  color: #d6249f;
+  outline: none;
+}
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.4rem;
+  color: #d6249f;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.4rem;
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.app-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.app-card:hover,
+.app-card:focus-within {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.app-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0 auto 15px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.screenshot {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d6249f;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #a01c77;
+  outline: none;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Réseaux sociaux - icônes Font Awesome */
+.socials {
+  margin: 15px 0;
+}
+
+.socials a {
+  color: #555;
+  margin: 0 10px;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.socials a:hover,
+.socials a:focus {
+  color: #d6249f;
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  main {
+    justify-content: center;
+  }
+
+  .app-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-card {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  header nav {
+    font-size: 0.9rem;
+  }
+
+  header nav a {
+    margin: 0 5px;
+  }
+
+  .socials a {
+    font-size: 1.4rem;
+  }
+}
